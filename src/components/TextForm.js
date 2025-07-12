@@ -31,10 +31,7 @@ export default function TextForm(props) {
   }
 
   const handelCopy = ()=>{
-    // console.log("I'm copy");
-    var text = document.getElementById("myBox")
-    text.select();
-    navigator.clipboard.writeText(text.value);
+    navigator.clipboard.writeText(text);
     props.showAlert("Text has been copied!","success")
   }
 
